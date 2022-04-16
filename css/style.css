@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Inicio de la pagina */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  background: 100vh;
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 241, 235, 0.3) 0%,
+      rgba(172, 225, 249, 0.3) 100%
+    ),
+    url(../img/img-start.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar-nav a:hover {
+  text-decoration: underline 2px rgb(92, 58, 58);
+}
+
+.intro h1 {
+  width: 100%;
+  padding-top: 15%;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.intro p {
+  width: 80%;
+  font-weight: 300;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  margin: auto;
+}
+
+/* Pushbar */
+#pushbar {
+  background-color: #353b48;
+}
+
+#pushbar button {
+  border: 0;
+  background-color: #353b48;
+  color: white;
+  margin-right: 2%;
+}
+
+#pushbar .bx-pushbar {
+  text-align: right;
+}
+
+#pushbar h2,
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 30px;
+}
+#pushbar h2 a {
+  color: white;
+  text-decoration: none;
+}
+#pushbar h2 a:hover {
+  text-decoration: underline rgb(182, 180, 180) 1px;
+}
+#pushbar h1 {
+  margin-top: 3%;
+}
+
+.bx-pushbar hr {
+  color: whitesmoke;
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* Section offers */
+.offers {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(199, 193, 193);
+  padding: 1%;
+}
+
+.title-offers {
+  color: #ffff;
+  padding: 1%;
+}
+
+.flexbox-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+
+.flexbox-cards .card {
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+/* Section new */
+.new {
+  background-color: #353b48;
+  height: 120vh;
+}
+
+.carousel {
+  width: 60%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.footer {
+  height: 50vh;
+  background-color: #18171c;
+  color: white;
+}
+
+.info {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  margin-top: 2%;
+}
+.socialMedia {
+  margin-bottom: 2%;
+}
+.socialMedia a {
+  text-decoration: none;
+  color: white;
+}
+.socialMedia a:hover {
+  color: #353b48;
+}
+
+/* T-shirts */
+.tshirts-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.offer {
+  height: 180vh;
+  width: 100%;
+  background-color: rgb(199, 193, 193);
+  padding: 1%;
+}
+
+.cards {
+  background-color: #eeeeee;
+  text-align: center;
+  margin-top: 2%;
+}
+
+@media screen and (max-width: 600px) {
+  .offers {
+    height: 150vh;
+  }
+
+  .flexbox-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin-top: 3%;
+  }
+
+  .navbar-nav .home {
+    display: none;
+  }
+
+  .intro {
+    padding-top: 25%;
+  }
+
+  .new {
+    height: 55vh;
+  }
+
+  .carousel {
+    padding-top: 14%;
+    width: 100%;
+    margin: auto;
+  }
+  .offer {
+    height: 390vh;
+  }
+  .cards {
+    margin-top: 3%;
+  }
+  .cards img {
+    height: 340px;
+  }
+}
